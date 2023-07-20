@@ -68,6 +68,22 @@ public class App {
         
         frame.setVisible(true);
         
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.PLAIN_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.INFORMATION_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.ERROR_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.QUESTION_MESSAGE);
+        int ans = JOptionPane.showConfirmDialog(null, "this is useless", "title", JOptionPane.YES_NO_CANCEL_OPTION);
+        String name = JOptionPane.showInputDialog(null, "What is your name");
+        if (ans == 0) { // Yes
+            System.out.println("phogn dep tria");
+        }
+        else if (ans == 1) { // No
+            System.out.println("huhu");
+        }
+        else { // -1: cancle
+            System.out.println("haha");
+        }
+        System.out.println(name);
     }
 
     public static void scan(String[] args) {
