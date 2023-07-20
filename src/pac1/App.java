@@ -60,7 +60,7 @@ public class App {
         // JLayerPanel --------------
         JLayeredPane layeredPane = new JLayeredPane();
 
-        layeredPane.setBounds(0, 0, 100, 100);
+        layeredPane.setBounds(0, 0, 100, 100 );
         JFrame frame = new JFrame("Jpanel");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(500, 500));
