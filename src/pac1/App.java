@@ -1,16 +1,6 @@
 package pac1;
 import java.util.Scanner;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import java.awt.Dimension;
-import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -18,7 +8,22 @@ import java.util.Random;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        LaunchPage launchPage = new LaunchPage();
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.PLAIN_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.INFORMATION_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.ERROR_MESSAGE);
+        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.QUESTION_MESSAGE);
+        int ans = JOptionPane.showConfirmDialog(null, "this is useless", "title", JOptionPane.YES_NO_CANCEL_OPTION);
+        String name = JOptionPane.showInputDialog(null, "What is your name");
+        if (ans == 0) { // Yes
+            System.out.println("phogn dep tria");
+        }
+        else if (ans == 1) { // No
+            System.out.println("huhu");
+        }
+        else { // -1: cancle
+            System.out.println("haha");
+        }
+        System.out.println(name);
     }
 
     public static void scan(String[] args) {
