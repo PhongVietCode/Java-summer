@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -17,57 +18,7 @@ import java.util.Random;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        // try{
-        //     // FileWriter writer = new FileWriter("secret_mes.txt");
-        //     // writer.write("Phong cuteeeee\n phong dep trai omega super tran");
-        //     // writer.append("\n Phong hihi");
-        //     // writer.close();
-        //     FileReader reader = new FileReader("secret_mes.txt");
-        //     int data = reader.read();
-        //     while (data != -1) {
-        //         System.out.print((char)data);
-        //         data = reader.read();
-        //     }
-        //     reader.close();
-        // }
-        // catch(Exception e){
-        //     System.out.println(e);
-        // }
-        // new MyFrame();
-        // JFrame frame = new JFrame();
-        // frame.setLayout(new FlowLayout(FlowLayout.LEADING,10,10));
-        // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // frame.setSize(600, 600);
-        // // frame.setLayout(null);
-        // // button-----
-        
-        
-        // JPanel panel = new JPanel();
-        // panel.setPreferredSize(new Dimension(500, 500));
-        // panel.setBackground(Color.lightGray);
-        // panel.setLayout(new GridLayout(3,3,10,10));
-        // panel.add(new JButton("1"));
-        // panel.add(new JButton("2"));
-        // panel.add(new JButton("3"));
-        // panel.add(new JButton("4"));
-        // panel.add(new JButton("5"));
-        // panel.add(new JButton("6"));
-        // panel.add(new JButton("7"));
-        // panel.add(new JButton("8"));
-        // panel.add(new JButton("9"));
-        // panel.add(new JButton("10"));
-
-        // JLayerPanel --------------
-        JLayeredPane layeredPane = new JLayeredPane();
-
-        layeredPane.setBounds(0, 0, 100, 100);
-        JFrame frame = new JFrame("Jpanel");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(new Dimension(500, 500));
-        frame.setLayout(null);
-        
-        frame.setVisible(true);
-        
+        LaunchPage launchPage = new LaunchPage();
     }
 
     public static void scan(String[] args) {
