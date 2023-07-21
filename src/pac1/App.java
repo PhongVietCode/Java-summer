@@ -2,88 +2,33 @@ package pac1;
 import java.util.Scanner;
 
 import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
+
 import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 
 
 public class App {
-
+    
     public static void main(String[] args) throws Exception {
-        // try{
-        //     // FileWriter writer = new FileWriter("secret_mes.txt");
-        //     // writer.write("Phong cuteeeee\n phong dep trai omega super tran");
-        //     // writer.append("\n Phong hihi");
-        //     // writer.close();
-        //     FileReader reader = new FileReader("secret_mes.txt");
-        //     int data = reader.read();
-        //     while (data != -1) {
-        //         System.out.print((char)data);
-        //         data = reader.read();
-        //     }
-        //     reader.close();
-        // }
-        // catch(Exception e){
-        //     System.out.println(e);
-        // }
-        // new MyFrame();
-        // JFrame frame = new JFrame();
-        // frame.setLayout(new FlowLayout(FlowLayout.LEADING,10,10));
-        // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // frame.setSize(600, 600);
-        // // frame.setLayout(null);
-        // // button-----
         
-        
-        // JPanel panel = new JPanel();
-        // panel.setPreferredSize(new Dimension(500, 500));
-        // panel.setBackground(Color.lightGray);
-        // panel.setLayout(new GridLayout(3,3,10,10));
-        // panel.add(new JButton("1"));
-        // panel.add(new JButton("2"));
-        // panel.add(new JButton("3"));
-        // panel.add(new JButton("4"));
-        // panel.add(new JButton("5"));
-        // panel.add(new JButton("6"));
-        // panel.add(new JButton("7"));
-        // panel.add(new JButton("8"));
-        // panel.add(new JButton("9"));
-        // panel.add(new JButton("10"));
-
-        // JLayerPanel --------------
-        JLayeredPane layeredPane = new JLayeredPane();
-
-        layeredPane.setBounds(0, 0, 100, 100 );
-        JFrame frame = new JFrame("Jpanel");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(new Dimension(500, 500));
-        frame.setLayout(null);
-        
-        frame.setVisible(true);
-        
-        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.PLAIN_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.INFORMATION_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.ERROR_MESSAGE);
-        // JOptionPane.showMessageDialog(null, "this is useless", "title", JOptionPane.QUESTION_MESSAGE);
-        int ans = JOptionPane.showConfirmDialog(null, "this is useless", "title", JOptionPane.YES_NO_CANCEL_OPTION);
-        String name = JOptionPane.showInputDialog(null, "What is your name");
-        if (ans == 0) { // Yes
-            System.out.println("phogn dep tria");
-        }
-        else if (ans == 1) { // No
-            System.out.println("huhu");
-        }
-        else { // -1: cancle
-            System.out.println("haha");
-        }
-        System.out.println(name);
     }
 
     public static void scan(String[] args) {
